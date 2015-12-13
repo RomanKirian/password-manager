@@ -58,14 +58,6 @@ storage.initSync();
 
 var crypto = require('crypto-js');
 
-/*
-account = {
-	"name": "facebook",
-	"username": "roman.kirian@gmail.com",
-	"password": "12345"
-}
-*/
-
 function getAccounts(masterPassword){
 	var encryptedAccounts = storage.getItemSync('accounts');
 	var accounts = [];
